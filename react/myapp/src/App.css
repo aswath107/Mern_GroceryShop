@@ -1,0 +1,38 @@
+/* App.css */
+.header-style {
+  background-color: blue;
+  color: white;
+  padding: 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.login-button, .register-button {
+  background-color: white;
+  color: blue;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+}
+
+.login-button:hover, .register-button:hover {
+  background-color: lightblue;
+}

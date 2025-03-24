@@ -1,0 +1,70 @@
+
+.orders-container {
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .orders-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .orders-table th, .orders-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .orders-table th {
+    background: #007bff;
+    color: white;
+  }
+  
+  .status.pending {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .status.shipped {
+    color: blue;
+    font-weight: bold;
+  }
+  
+  .status.delivered {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .action-button {
+    padding: 6px 12px;
+    margin: 4px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .view {
+    background-color: #17a2b8;
+    color: white;
+  }
+  
+  .update {
+    background-color: #ffc107;
+    color: black;
+  }
+  
+  .cancel {
+    background-color: #dc3545;
+    color: white;
+  }
+  

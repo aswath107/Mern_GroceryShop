@@ -1,0 +1,121 @@
+/* Vendor.css */
+
+.vendor-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .vendor-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .vendor-sections {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .vendor-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .vendor-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .add-product {
+    background-color: #28a745;
+  }
+  
+  .add-product:hover {
+    background-color: #218838;
+  }
+  
+  .add-promotion {
+    background-color: #ffc107;
+  }
+  
+  .add-promotion:hover {
+    background-color: #e0a800;
+  }
+  
+  .vendor-stats {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .stat-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 20%;
+  }
+  
+  .vendor-activities, .vendor-support-tickets, .vendor-reviews, .vendor-promotions {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .vendor-activities h2, .vendor-support-tickets h2, .vendor-reviews h2, .vendor-promotions h2 {
+    margin-bottom: 10px;
+  }
+  
+  .vendor-activities ul, .vendor-support-tickets ul, .vendor-reviews ul, .vendor-promotions ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .vendor-activities li, .vendor-support-tickets li, .vendor-reviews li, .vendor-promotions li {
+    margin-bottom: 5px;
+  }
+  
+  .vendor-content {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .vendor-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+  .vendor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .vendor-header-logo img {
+    height: 50px; /* Adjust logo size */
+  }
+  
+  .vendor-header-info h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .vendor-header-info p {
+    font-size: 16px;
+    color: #888;
+  }
+  

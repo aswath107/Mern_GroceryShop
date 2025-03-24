@@ -1,0 +1,68 @@
+/* AboutUs.css */
+.about-us-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .about-us-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .about-us-header h1 {
+    font-size: 2.5rem;
+    color: #4CAF50; /* Green theme */
+    margin-bottom: 10px;
+  }
+  
+  .about-us-header p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .about-us-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .mission-section,
+  .unique-section,
+  .story-section,
+  .join-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    color: #4CAF50;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  li {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  strong {
+    color: #4CAF50;
+  }

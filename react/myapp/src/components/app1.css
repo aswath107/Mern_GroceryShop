@@ -1,0 +1,194 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header Styles */
+.header {
+  background-color: #3b82f6; /* Blue */
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo Styling */
+.header .logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header .logo img {
+  height: 50px; /* Adjust as needed */
+  margin-right: 10px; /* Space between logo and text */
+}
+
+/* Navigation Styles */
+.header .nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header .nav-links li {
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.header .nav-links li:hover {
+  color: #e0f2ff; /* Light blue */
+}
+
+/* Button Styles */
+.header .login-button,
+.header .register-button {
+  background-color: white;
+  color: #3b82f6; /* Blue */
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+
+.header .login-button:hover,
+.header .register-button:hover {
+  background-color: #e0f2ff; /* Light blue */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .header .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 1rem;
+  }
+
+  .header .logo img {
+      height: 40px; /* Smaller logo for smaller screens */
+  }
+}
+.main-content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.main-content .hero-section h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.main-content .hero-section p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 1rem;
+}
+
+.main-content .shop-now-button {
+  background-color: #10b981; /* Green */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+.main-content .shop-now-button:hover {
+  background-color: #059669; /* Darker green */
+}
+
+.main-content .products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.main-content .product-card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .main-content .product-card img {
+    height: 100px; /* Adjust height for smaller screens */
+  }
+}
+
+.main-content .product-card h2 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-top: 1rem;
+}
+
+.main-content .product-card p {
+  color: #ef4444; /* Red */
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.main-content .product-card button {
+  background-color: #3b82f6; /* Blue */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.main-content .product-card button:hover {
+  background-color: #2563eb; /* Darker blue */
+}
+
+.main-content .free-delivery-section {
+  background-color: #f0f4f8; /* Light gray */
+  padding: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.main-content .free-delivery-section h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.main-content .free-delivery-section p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 1rem;
+}
+
+.main-content .order-now-button {
+  background-color: #10b981; /* Green */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+.main-content .order-now-button:hover {
+  background-color: #059669; /* Darker green */
+}
+

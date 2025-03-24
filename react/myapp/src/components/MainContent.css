@@ -1,0 +1,194 @@
+/* Main Container */
+.main-container {
+  font-family: Arial, sans-serif;
+  margin-top: 6px;
+}
+
+/* Slider */
+.slider-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-item {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-image {
+  width: 30%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  font-size: 24px;
+  transform: translateY(-50%);
+}
+
+.slider-button-left {
+  left: 10px;
+}
+
+.slider-button-right {
+  right: 10px;
+}
+
+/* Product Grid */
+.product-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  margin: 20px;
+  width: 250px;
+  text-align: center;
+  position: relative;
+}
+
+.product-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-discount {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.product-title {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.product-description {
+  font-size: 14px;
+  margin-top: 5px;
+  color: #555;
+}
+
+.product-pricing {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.product-original-price {
+  text-decoration: line-through;
+  color: gray;
+  margin-right: 5px;
+}
+
+.product-discounted-price {
+  font-weight: bold;
+  color: #28a745;
+}
+
+.product-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.product-button:hover {
+  background-color: #45a049;
+}
+/* Features Section */
+.features-section {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 40px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* Feature Item */
+.feature-item {
+  flex: 1;
+  min-width: 250px;
+  max-width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Feature Box (A-box layout) */
+.feature-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Feature Image */
+.feature-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+/* Feature Title */
+.feature-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Feature Description */
+.feature-description {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .features-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-item {
+    width: 90%;
+  }
+
+  .feature-box {
+    width: 100%;
+  }
+}

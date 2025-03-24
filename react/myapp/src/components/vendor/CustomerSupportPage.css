@@ -1,0 +1,81 @@
+.cs-page {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cs-ticket-form, .cs-ticket-list, .cs-contact-support {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cs-form-group {
+    margin-bottom: 15px;
+}
+
+.cs-label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.cs-input, .cs-textarea, .cs-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #fff;
+}
+
+.cs-submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cs-submit-button:hover {
+    background-color: #388E3C;
+}
+
+.cs-ticket-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cs-ticket-table th, .cs-ticket-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.cs-ticket-filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.cs-update-button {
+    background-color: #2196F3;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+
+.cs-update-button:hover {
+    background-color: #0b7dda;
+}
+
+.cs-contact-support {
+    text-align: center;
+}
