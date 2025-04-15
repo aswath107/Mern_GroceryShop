@@ -1,4 +1,3 @@
-/* Global Styles */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,17 +5,16 @@ body {
   color: #333;
 }
 
-/* Header Styles */
 .header {
-  background-color: #3b82f6; /* Blue */
+  background-color: #3b82f6; 
   color: white;
   padding: 1rem 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
   align-items: center;
+  gap: 1rem; 
 }
 
-/* Logo Styling */
 .header .logo {
   display: flex;
   align-items: center;
@@ -25,11 +23,32 @@ body {
 }
 
 .header .logo img {
-  height: 50px; /* Adjust as needed */
-  margin-right: 10px; /* Space between logo and text */
+  height: 50px; 
+  margin-right: 10px; 
 }
 
-/* Navigation Styles */
+.search-container {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  width: 200px;
+}
+
+.search-button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
 .header .nav-links {
   display: flex;
   gap: 1rem;
@@ -45,150 +64,95 @@ body {
 }
 
 .header .nav-links li:hover {
-  color: #e0f2ff; /* Light blue */
+  color: #e0f2ff; 
 }
 
-/* Button Styles */
-.header .login-button,
-.header .register-button {
-  background-color: white;
-  color: #3b82f6; /* Blue */
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
+.user-section {
+  display: flex;
+  align-items: center;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-pic {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.logout-button {
+  background: red;
+  color: white;
+  padding: 5px 10px;
   border: none;
   cursor: pointer;
-  margin-left: 0.5rem;
+  border-radius: 5px;
   font-weight: bold;
 }
 
-.header .login-button:hover,
-.header .register-button:hover {
-  background-color: #e0f2ff; /* Light blue */
+.logout-button:hover {
+  background: darkred;
 }
 
-/* Responsive Design */
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.login-button,
+.register-button {
+  background-color: white;
+  color: #3b82f6;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #3b82f6;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-button:hover,
+.register-button:hover {
+  background-color: #3b82f6; 
+  color: white; 
+  border-color: #3b82f6; 
+}
+
 @media (max-width: 768px) {
   .header {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;  
   }
 
   .header .nav-links {
-      flex-direction: column;
-      gap: 0.5rem;
-      margin-top: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
   }
 
   .header .logo img {
-      height: 40px; /* Smaller logo for smaller screens */
+    height: 40px; 
+  }
+
+  .header .login-button,
+  .header .register-button {
+    font-size: 12px;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .search-container {
+    width: 100%;
+  }
+
+  .search-input {
+    width: 100%;
   }
 }
-.main-content {
-  padding: 2rem;
-  text-align: center;
-}
-
-.main-content .hero-section h1 {
-  font-size: 2.5rem;
-  color: #333;
-}
-
-.main-content .hero-section p {
-  font-size: 1.2rem;
-  color: #666;
-  margin-top: 1rem;
-}
-
-.main-content .shop-now-button {
-  background-color: #10b981; /* Green */
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.25rem;
-  border: none;
-  cursor: pointer;
-  margin-top: 1.5rem;
-}
-
-.main-content .shop-now-button:hover {
-  background-color: #059669; /* Darker green */
-}
-
-.main-content .products-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.main-content .product-card {
-  background-color: white;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-@media (max-width: 768px) {
-  .main-content .product-card img {
-    height: 100px; /* Adjust height for smaller screens */
-  }
-}
-
-.main-content .product-card h2 {
-  font-size: 1.25rem;
-  color: #333;
-  margin-top: 1rem;
-}
-
-.main-content .product-card p {
-  color: #ef4444; /* Red */
-  font-weight: bold;
-  margin-top: 0.5rem;
-}
-
-.main-content .product-card button {
-  background-color: #3b82f6; /* Blue */
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  border: none;
-  cursor: pointer;
-  margin-top: 1rem;
-}
-
-.main-content .product-card button:hover {
-  background-color: #2563eb; /* Darker blue */
-}
-
-.main-content .free-delivery-section {
-  background-color: #f0f4f8; /* Light gray */
-  padding: 2rem;
-  margin-top: 2rem;
-  text-align: center;
-}
-
-.main-content .free-delivery-section h2 {
-  font-size: 2rem;
-  color: #333;
-}
-
-.main-content .free-delivery-section p {
-  font-size: 1.1rem;
-  color: #666;
-  margin-top: 1rem;
-}
-
-.main-content .order-now-button {
-  background-color: #10b981; /* Green */
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.25rem;
-  border: none;
-  cursor: pointer;
-  margin-top: 1.5rem;
-}
-
-.main-content .order-now-button:hover {
-  background-color: #059669; /* Darker green */
-}
-

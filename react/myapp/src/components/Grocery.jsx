@@ -41,12 +41,11 @@
 
 // export default Grocery;
 
-
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
-import routes from "./Routes"; // Import the routes configuration
+import routes from "./Routes"; // Ensure the path and case match the file exactly
 
 function Grocery() {
   return (
@@ -63,3 +62,36 @@ function Grocery() {
 }
 
 export default Grocery;
+
+
+// import React, { useState, useEffect } from "react";
+// import { Routes, Route, useNavigate } from "react-router-dom";
+// import Header from "./Header";
+// import Footer from "./Footer";
+// import routes from "./Routes"; // Import routes as a function
+
+// function Grocery() {
+//   const [user, setUser] = useState(null);
+//   const navigate = useNavigate();
+
+//   useEffect(() => {
+//     const storedUser = localStorage.getItem("user");
+//     if (storedUser) {
+//       setUser(JSON.parse(storedUser));
+//     }
+//   }, []);
+
+//   return (
+//     <div className="flex flex-col min-h-screen">
+//       <Header user={user} setUser={setUser} />
+//       <Routes>
+//         {routes(setUser).map((route, index) => (
+//           <Route key={index} path={route.path} element={route.element} />
+//         ))}
+//       </Routes>
+//       <Footer />
+//     </div>
+//   );
+// }
+
+// export default Grocery;
